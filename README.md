@@ -53,5 +53,5 @@ Se verifica que el porcentaje con ambos valores igual a 0 se calcule correctamen
 Después de ejecutar las pruebas, se generará un informe en formato HTML llamado "reporte_de_pruebas.html". Puedes abrir este informe en un navegador web para obtener detalles sobre la ejecución de cada prueba, incluyendo éxitos y fallos.
 
 ¡Contribuciones y mejoras son bienvenidas! Si encuentras problemas o tienes sugerencias, por favor, abre un problema o envía una solicitud de extracción.
-!()[screenshots/last_test_result.png]
+![Texto Alternativo](screenshots/last_test_result.png)
 
