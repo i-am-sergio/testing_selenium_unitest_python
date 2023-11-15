@@ -59,7 +59,7 @@ def test_calculate_percentage_invalid_input(self):
     error_message_element = self.driver.find_element(By.XPATH, "//*[@id='content']/p[2]/font")
     error_message = error_message_element.text
 
-    self.assertIn("Invalid input", error_message)  # Verificar que se muestre un mensaje de error por entrada no válida
+    self.assertIn("Please provide two numeric values in any fields below.", error_message)  # Verificar que se muestre un mensaje de error por entrada no válida
 ```
 
 ## Informe de Ejecución de Pruebas
