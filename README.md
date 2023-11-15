@@ -48,6 +48,20 @@ Se verifica que el porcentaje con un valor igual a 0 y otro valor se calcule cor
 ### Prueba 7: Ambos Valores Igual a 0
 Se verifica que el porcentaje con ambos valores igual a 0 se calcule correctamente.
 
+### Prueba Invalida:
+```python
+def test_calculate_percentage_invalid_input(self):
+    # Caso de prueba: Validar el manejo de entradas no válidas
+    self.driver.find_element(By.ID, "cpar1").send_keys("abc")
+    self.driver.find_element(By.ID, "cpar2").send_keys("50")
+    self.driver.find_element(By.XPATH, self.xpath_btn_calculate).click()
+
+    error_message_element = self.driver.find_element(By.XPATH, "//*[@id='content']/p[2]/font")
+    error_message = error_message_element.text
+
+    self.assertIn("Invalid input", error_message)  # Verificar que se muestre un mensaje de error por entrada no válida
+```
+
 ## Informe de Ejecución de Pruebas
 
 Después de ejecutar las pruebas, se generará un informe en formato HTML llamado "reporte_de_pruebas.html". Puedes abrir este informe en un navegador web para obtener detalles sobre la ejecución de cada prueba, incluyendo éxitos y fallos.
